@@ -1,3 +1,7 @@
+/* =========================
+   RESET
+========================= */
+
 *{
   margin:0;
   padding:0;
@@ -5,47 +9,125 @@
   font-family:Arial;
 }
 
+/* =========================
+   BODY
+========================= */
+
 body{
   background:#f5f5f5;
   color:#1d2b45;
 }
 
-.banner{
-  height:120px;
-  background:linear-gradient(135deg,#ff5a5a,#d90000);
-  border-radius:0 0 20px 20px;
+/* =========================
+   CONTAINER GERAL
+========================= */
+
+.container{
+  max-width:1200px;
+
+  margin:0 auto;
+
+  padding:0 20px;
 }
+
+/* =========================
+   TOPO
+========================= */
+
+.topo,
+.motos{
+  width:100%;
+}
+
+/* =========================
+   BANNER
+========================= */
+
+.banner{
+  height:140px;
+
+  background:
+  linear-gradient(
+    135deg,
+    #ff5a5a,
+    #d90000
+  );
+
+  border-radius:0 0 25px 25px;
+}
+
+/* =========================
+   PERFIL
+========================= */
 
 .perfil-area{
   display:flex;
-  justify-content:space-between;
+
+  justify-content:center;
+
   align-items:flex-end;
-  padding:0 30px;
-  margin-top:-40px;
+
+  gap:40px;
+
+  margin-top:-50px;
 }
 
 .perfil{
-  width:110px;
-  height:110px;
+  width:300px;
+  height: 300px;;
+
   border-radius:50%;
-  
+
   object-fit:cover;
+
+  border:4px solid white;
+
+  background:white;
 }
 
+/* =========================
+   LOGO
+========================= */
+
 .logo-loja{
- 
+  width:150px;
+  height:150px;
+
+  background:white;
+
+  border-radius:20px;
+
   display:flex;
   align-items:center;
   justify-content:center;
+
+  box-shadow:0 4px 10px rgba(0,0,0,.1);
 }
 
+.logo-loja img{
+  width:70%;
+}
+
+/* =========================
+   INFO
+========================= */
+
 .info{
-  padding:30px;
+  padding:30px 20px;
+
+  text-align:center;
 }
 
 .info h1{
-  font-size:36px;
+  font-size:2.5rem;
+
   margin-bottom:10px;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  gap:10px;
 }
 
 .info i{
@@ -54,51 +136,176 @@ body{
 
 .info p{
   color:#666;
+
   line-height:1.5;
+
+  font-size:1rem;
 }
+
+/* =========================
+   BOTÕES
+========================= */
 
 .botoes{
   display:flex;
+
+  justify-content:center;
+
   gap:15px;
+
   margin-top:25px;
+
+  flex-wrap:wrap;
 }
 
 .btn{
   background:#d90000;
+
   color:white;
+
   padding:15px 25px;
+
   border-radius:50px;
+
   text-decoration:none;
+
   font-weight:bold;
+
+  display:flex;
+  align-items:center;
+  gap:10px;
+
+  transition:.3s;
 }
+
+.btn:hover{
+  transform:translateY(-3px);
+}
+
+/* =========================
+   MOTOS
+========================= */
+
+.motos{
+  padding:20px 0 50px;
+}
+
+.motos h2{
+  text-align:center;
+
+  margin-bottom:30px;
+
+  font-size:2.2rem;
+}
+
+/* =========================
+   CARD MOTO
+========================= */
 
 .card-moto{
   background:white;
-  margin:30px;
-  padding:20px;
+
+  max-width:500px;
+
+  margin:auto;
+
+  padding:25px;
+
   border-radius:25px;
+
+  box-shadow:0 5px 15px rgba(0,0,0,.05);
+}
+
+.card-moto h3{
+  font-size:2rem;
+
+  margin-bottom:20px;
+
+  text-align:center;
 }
 
 .card-moto img{
   width:100%;
+
+  max-width:350px;
+
+  display:block;
+
+  margin:20px auto;
 }
+
+/* =========================
+   BOTÕES CARD
+========================= */
 
 button{
   width:100%;
+
   padding:18px;
+
   border:none;
+
   border-radius:50px;
+
   background:#d90000;
+
   color:white;
-  font-size:18px;
+
+  font-size:1rem;
+
   margin-top:15px;
+
   cursor:pointer;
+
+  transition:.3s;
+}
+
+button:hover{
+  transform:scale(1.02);
 }
 
 .secundario{
   background:#f1f1f1;
+
   color:#1d2b45;
 }
-.motos h2 {
-  margin-left: 39px;
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media(max-width:768px){
+
+  .info h1{
+    font-size:2rem;
+  }
+
+  .perfil-area{
+    gap:20px;
+  }
+
+  .logo-loja{
+    width:70px;
+    height:70px;
+  }
+
+  .perfil{
+    width:100px;
+    height:100px;
+  }
+  
+
+  
+
+}
+
+.motos-grid{
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(320px,1fr));
+
+  gap:30px;
+
+  margin-top:30px;
 }
