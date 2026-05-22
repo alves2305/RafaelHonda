@@ -436,3 +436,217 @@ button:hover{
 
   margin:20px 0;
 }
+
+/* =========================
+   TAG NOVA
+========================= */
+
+.tag-nova{
+  background:#d90000;
+
+  color:white;
+
+  padding:10px 20px;
+
+  border-radius:50px;
+
+  font-size:.9rem;
+
+  font-weight:bold;
+
+  display:inline-block;
+
+  margin-bottom:20px;
+}
+
+/* =========================
+   SOBRE MOTO
+========================= */
+
+.sobre-moto{
+  margin-top:50px;
+
+  text-align:center;
+}
+
+.sobre-moto h2{
+  margin-bottom:20px;
+
+  font-size:2rem;
+}
+
+.sobre-moto p{
+  max-width:800px;
+
+  margin:auto;
+
+  line-height:1.8;
+
+  color:#666;
+}
+
+/* =========================
+   BENEFÍCIOS
+========================= */
+
+.beneficios{
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(250px,1fr));
+
+  gap:25px;
+
+  margin-top:50px;
+}
+
+.beneficio{
+  background:white;
+
+  padding:30px;
+
+  border-radius:25px;
+
+  text-align:center;
+
+  box-shadow:0 5px 15px rgba(0,0,0,.05);
+}
+
+.beneficio i{
+  font-size:2rem;
+
+  color:#d90000;
+
+  margin-bottom:20px;
+}
+
+.beneficio h3{
+  margin-bottom:15px;
+}
+
+.beneficio p{
+  color:#666;
+}
+
+
+/* =========================
+   CONSÓRCIO
+========================= */
+
+.consorcio-box{
+  background:white;
+
+  padding:30px;
+
+  border-radius:25px;
+
+  max-width:500px;
+
+  margin:40px auto;
+
+  box-shadow:0 5px 15px rgba(0,0,0,.05);
+
+  text-align:center;
+}
+
+.moto-consorcio-img{
+  width:100%;
+
+  max-width:350px;
+
+  margin:20px auto;
+
+  display:block;
+}
+
+.consorcio-box h2{
+  margin:20px 0;
+
+  font-size:1.5rem;
+}
+
+/* =========================
+   PARCELAS
+========================= */
+
+.parcelas{
+  margin-top:25px;
+}
+
+.parcela{
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  gap:10px;
+
+  padding:15px;
+
+  border-bottom:1px solid #eee;
+
+  font-size:1.1rem;
+}
+
+.parcela span{
+  color:#666;
+}
+
+.parcela strong{
+  color:#1d2b45;
+}
+
+.parcela.ativa strong{
+  color:#d90000;
+}
+
+/* =========================
+   OBSERVAÇÃO
+========================= */
+
+.observacao{
+  margin-top:25px;
+
+  color:#777;
+
+  font-size:.9rem;
+
+  line-height:1.5;
+}
+
+/* =========================
+   BOTÃO WHATSAPP
+========================= */
+
+.btn-whatsapp{
+  background:#25d366;
+
+  color:white;
+
+  width:100%;
+
+  padding:18px;
+
+  border:none;
+
+  border-radius:50px;
+
+  font-size:1rem;
+
+  font-weight:bold;
+
+  cursor:pointer;
+
+  margin-top:30px;
+
+  transition:.3s;
+}
+
+.btn-whatsapp:hover{
+  transform:scale(1.02);
+}
+
+.btn-whatsapp i{
+  margin-right:10px;
+}
