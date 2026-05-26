@@ -650,3 +650,45 @@ button:hover{
 .btn-whatsapp i{
   margin-right:10px;
 }
+
+.cta-final{
+  background:white;
+  margin-top:60px;
+  padding:50px 30px;
+  border-radius:30px;
+  text-align:center;
+}
+
+.cta-final h2{
+  font-size:32px;
+  margin-bottom:20px;
+  color:#1d2b45;
+}
+
+.cta-final p{
+  color:#666;
+  line-height:1.6;
+  max-width:600px;
+  margin:auto;
+}
+
+.cta-botoes{
+  display:flex;
+  gap:15px;
+  justify-content:center;
+  margin-top:30px;
+  flex-wrap:wrap;
+}
+
+.footer{
+  text-align:center;
+  padding:40px 20px;
+  color:#777;
+  font-size:14px;
+}
+
+.footer span{
+  display:block;
+  margin-top:10px;
+}
+
