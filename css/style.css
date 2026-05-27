@@ -63,13 +63,16 @@ body{
 .perfil-area{
   display:flex;
 
+  align-items:center;
   justify-content:center;
 
-  align-items:flex-end;
+  gap:80px;
 
-  gap:40px;
+  padding:0 30px;
 
-  margin-top:-50px;
+  margin-top:-70px;
+
+  flex-wrap:wrap;
 }
 
 .perfil{
@@ -90,8 +93,8 @@ body{
 ========================= */
 
 .logo-loja{
-  width:150px;
-  height:150px;
+  width:300px;
+  height:80px;
 
   background:white;
 
@@ -227,11 +230,11 @@ body{
 .card-moto img{
   width:100%;
 
-  max-width:350px;
+  height:220px;
+
+  object-fit:contain;
 
   display:block;
-
-  margin:20px auto;
 }
 
 /* =========================
@@ -773,9 +776,7 @@ button:active{
   transform:scale(0.96);
 }
 
-.perfil:hover{
-  transform:scale(1.05);
-}
+
 
 .card-moto{
   opacity:0;
@@ -884,4 +885,117 @@ button:active{
   color:#1d2b45;
 
   background:none;
+}
+
+
+/* DESKTOP */
+@media (min-width: 900px){
+
+  .perfil{
+
+    width:260px;
+    height:320px;
+
+    border-radius:30px;
+
+    object-fit:cover;
+
+    border:6px solid white;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+  }
+
+}
+
+/* FOTO PADRÃO */
+
+.perfil{
+  object-fit:cover;
+
+  border:6px solid white;
+}
+
+
+/* MOBILE */
+
+.perfil-mobile{
+  width:180px;
+  height:180px;
+
+  border-radius:50%;
+}
+
+.perfil-desktop{
+  display:none;
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 900px){
+
+  .perfil-mobile{
+    display:none;
+  }
+
+  .perfil-desktop{
+    display:block;
+
+    width:500px;
+    height:420px;
+
+    border-radius:30px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+  }
+
+}
+
+@media (min-width: 900px){
+
+  .hero{
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    gap:80px;
+
+    padding:40px 60px;
+  }
+
+  .info{
+    text-align:left;
+
+    max-width:500px;
+  }
+
+  .info h1{
+    font-size:45px;
+  }
+
+  .info p{
+    font-size:22px;
+
+    margin-top:15px;
+  }
+
+  .botoes{
+    justify-content:flex-start;
+  }
+
+}
+
+.card-moto{
+  background:white;
+
+  border-radius:30px;
+
+  padding:25px;
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:space-between;
 }
