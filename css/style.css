@@ -692,3 +692,196 @@ button:hover{
   margin-top:10px;
 }
 
+#topoBtn{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+
+  width:55px;
+  height:55px;
+
+  border:none;
+  border-radius:50%;
+
+  background:#d90000;
+  color:white;
+
+  font-size:20px;
+  cursor:pointer;
+
+  display:block;
+
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+
+  z-index:999;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+.card-moto{
+  transition:0.3s;
+}
+
+.card-moto:hover{
+  transform:translateY(-8px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.whatsapp-float{
+  position:fixed;
+
+  width:60px;
+  height:60px;
+
+  bottom:20px;
+  left:20px;
+
+  background:#25d366;
+  color:white;
+
+  border-radius:50%;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:32px;
+
+  text-decoration:none;
+
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+
+  z-index:999;
+}
+
+.card-moto{
+  opacity:0;
+  transform:translateY(40px);
+
+  transition:0.6s;
+}
+
+.card-moto.mostrar{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.btn:active,
+button:active{
+  transform:scale(0.96);
+}
+
+.perfil:hover{
+  transform:scale(1.05);
+}
+
+.card-moto{
+  opacity:0;
+
+  transform:translateY(40px);
+
+  transition:0.6s;
+}
+
+.card-moto.mostrar{
+  opacity:1;
+
+  transform:translateY(0);
+}
+
+/* LOADING */
+
+#loading{
+  position:fixed;
+
+  width:100%;
+  height:100vh;
+
+  background:white;
+
+  top:0;
+  left:0;
+
+  display:flex;
+
+  flex-direction:column;
+
+  align-items:center;
+  justify-content:center;
+
+  z-index:99999;
+
+  transition:0.6s;
+}
+
+.loading-logo{
+  width:180px;
+
+  animation:pulsar 1.5s infinite;
+}
+
+#loading h2{
+  margin-top:20px;
+
+  color:#d90000;
+
+  font-size:28px;
+
+  letter-spacing:2px;
+}
+
+@keyframes pulsar{
+
+  0%{
+    transform:scale(1);
+  }
+
+  50%{
+    transform:scale(1.08);
+  }
+
+  100%{
+    transform:scale(1);
+  }
+
+}
+
+/* BUSCA */
+
+.busca{
+  background:white;
+
+  margin:30px;
+
+  padding:18px 22px;
+
+  border-radius:50px;
+
+  display:flex;
+  align-items:center;
+  gap:15px;
+
+  box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.busca i{
+  color:#999;
+
+  font-size:18px;
+}
+
+.busca input{
+  border:none;
+
+  outline:none;
+
+  width:100%;
+
+  font-size:17px;
+
+  color:#1d2b45;
+
+  background:none;
+}

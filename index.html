@@ -18,6 +18,17 @@
 
 <body>
 
+  <!-- LOADING -->
+<div id="loading">
+
+  <img
+  src="img/Honda_Logo1.svg"
+  class="loading-logo">
+
+  <h2>Rafael Honda</h2>
+
+</div>
+
   <!-- CONTAINER GERAL -->
   <main class="container">
 
@@ -43,7 +54,7 @@
           <i class="fa-solid fa-circle-check"></i>
         </h1>
 
-        <p>
+        <p id="texto-digitando">
           Não importa o quão alto seja o seu sonho, a gente chega lá!
         </p>
 
@@ -69,6 +80,18 @@
    <section class="motos">
 
   <h2>Escolha sua moto</h2>
+
+  <!-- BARRA DE PESQUISA -->
+  <div class="busca">
+
+    <i class="fa-solid fa-magnifying-glass"></i>
+
+    <input
+    type="text"
+    id="pesquisa"
+    placeholder="Qual moto você está procurando?">
+
+  </div>
 
   <div class="motos-grid">
 
@@ -857,9 +880,23 @@
 
 </footer>
 
+
   </main>
 
-  <script src="js/script.js"></script>
+  <button id="topoBtn">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+  <a href="https://wa.me/5574999679596"
+class="whatsapp-float">
+
+  <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+  <script src="script/script.js"></script>
+
+  
 
 </body>
 </html>
