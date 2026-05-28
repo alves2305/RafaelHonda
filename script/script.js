@@ -171,36 +171,100 @@ if(enviarWhatsapp){
   enviarWhatsapp.addEventListener('click', () => {
 
     const cpf =
-    document.getElementById('cpf').value;
+    document.getElementById('cpf');
 
-    const estadoCivil =
-    document.getElementById('estadoCivil').value;
+    const nomeCompleto =
+    document.getElementById('nomeCompleto');
 
     const endereco =
-    document.getElementById('endereco').value;
+    document.getElementById('endereco');
 
     const email =
-    document.getElementById('email').value;
+    document.getElementById('email');
 
     const profissao =
-    document.getElementById('profissao').value;
+    document.getElementById('profissao');
 
     const renda =
-    document.getElementById('renda').value;
+    document.getElementById('renda');
 
     const primeiraParcela =
-    document.getElementById('primeiraParcela').value;
+    document.getElementById('primeiraParcela');
 
+    const formaPagamento =
+    document.getElementById('formaPagamento');
+
+
+    // VALIDAÇÃO
+    if(cpf.value === ''){
+      alert('Por favor, preencha o CPF.');
+      cpf.focus();
+      return;
+    }
+
+    if(nomeCompleto.value === ''){
+      alert('Por favor, preencha o nome completo.');
+      nomeCompleto.focus();
+      return;
+    }
+
+    if(endereco.value === ''){
+      alert('Por favor, preencha o endereço.');
+      endereco.focus();
+      return;
+    }
+
+    if(email.value === ''){
+      alert('Por favor, preencha o e-mail.');
+      email.focus();
+      return;
+    }
+
+    if(profissao.value === ''){
+      alert('Por favor, preencha a profissão.');
+      profissao.focus();
+      return;
+    }
+
+    if(renda.value === ''){
+      alert('Por favor, preencha a renda mensal.');
+      renda.focus();
+      return;
+    }
+
+    if(primeiraParcela.value === ''){
+      alert('Por favor, escolha um plano.');
+      primeiraParcela.focus();
+      return;
+    }
+
+    if(formaPagamento.value === ''){
+      alert('Por favor, escolha a forma de pagamento.');
+      formaPagamento.focus();
+      return;
+    }
+
+
+    // MENSAGEM
     const mensagem =
-`Olá Rafael, gostaria de fazer agora meu consórcio.
+`Olá Rafael, gostaria de fazer agora meu consórcio da ${nomeMoto}.
 
-CPF: ${cpf}
-Estado civil: ${estadoCivil}
-Endereço: ${endereco}
-E-mail: ${email}
-Profissão: ${profissao}
-Renda mensal: ${renda}
-Valor da primeira parcela: ${primeiraParcela}`;
+CPF: ${cpf.value}
+
+Nome completo: ${nomeCompleto.value}
+
+Endereço: ${endereco.value}
+
+E-mail: ${email.value}
+
+Profissão: ${profissao.value}
+
+Renda mensal: ${renda.value}
+
+Plano escolhido: ${primeiraParcela.value}
+
+Forma de pagamento: ${formaPagamento.value}`;
+
 
     const numero =
     '5574999679596';

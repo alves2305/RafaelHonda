@@ -1070,3 +1070,22 @@ button:active{
 #enviarWhatsapp:hover{
   transform:scale(1.02);
 }
+
+
+#formConsorcio select{
+  width:100%;
+
+  padding:18px;
+
+  border:none;
+
+  border-radius:15px;
+
+  background:#f5f5f5;
+
+  font-size:16px;
+
+  outline:none;
+
+  color:#1d2b45;
+}

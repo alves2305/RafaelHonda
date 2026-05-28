@@ -71,8 +71,8 @@
 
     <input
     type="text"
-    id="estadoCivil"
-    placeholder="Estado civil">
+    id="nomeCompleto"
+    placeholder="Nome completo">
 
     <input
     type="text"
@@ -94,10 +94,35 @@
     id="renda"
     placeholder="Renda mensal">
 
-    <input
-    type="text"
-    id="primeiraParcela"
-    placeholder="Valor da primeira parcela">
+    <select id="primeiraParcela">
+
+  <option value="">
+    Escolha o plano
+  </option>
+
+  <option value="72x R$ 1.078,04">
+    72x R$ 1.078,04
+  </option>
+
+
+
+</select>
+    
+    <select id="formaPagamento">
+
+  <option value="">
+    Forma de pagamento da primeira parcela
+  </option>
+
+  <option value="PIX">
+    PIX
+  </option>
+
+  <option value="Cartão">
+    Cartão
+  </option>
+
+</select>
 
     <button type="button" id="enviarWhatsapp">
       Enviar no WhatsApp
@@ -124,6 +149,12 @@
     </section>
 
   </main>
+
+<script>
+
+  const nomeMoto = 'AFRICA TWIN';
+
+</script>
 
   <script src="../script/script.js"></script>
 
