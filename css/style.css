@@ -1089,3 +1089,92 @@ button:active{
 
   color:#1d2b45;
 }
+
+
+
+/* ===========================
+        LOADING SCREEN
+=========================== */
+
+#loading{
+    position:fixed;
+    inset:0;
+
+    background:#fff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    z-index:99999;
+
+    transition:opacity .6s ease;
+}
+
+.loading-content{
+
+    width:90%;
+    max-width:420px;
+
+    text-align:center;
+}
+
+.loading-logo{
+
+    width:180px;
+
+    margin-bottom:20px;
+}
+
+.loading-content h1{
+
+    color:#1f1f1f;
+
+    margin-bottom:10px;
+
+    font-size:36px;
+}
+
+#loading-text{
+
+    color:#666;
+
+    margin-bottom:30px;
+}
+
+.loading-bar{
+
+    width:100%;
+
+    height:10px;
+
+    background:#ececec;
+
+    border-radius:30px;
+
+    overflow:hidden;
+}
+
+#loading-progress{
+
+    width:0%;
+
+    height:100%;
+
+    background:#d40000;
+
+    transition:width .2s linear;
+}
+
+#loading-percent{
+
+    display:block;
+
+    margin-top:15px;
+
+    font-weight:bold;
+
+    color:#d40000;
+
+    font-size:18px;
+}

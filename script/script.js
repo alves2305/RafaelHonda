@@ -94,27 +94,45 @@ window.addEventListener('scroll', () => {
 // }
 
 
-// LOADING
-window.addEventListener('load', () => {
+// ==========================
+// LOADING SCREEN
+// ==========================
 
-  const loading =
-  document.getElementById('loading');
+const loading = document.getElementById("loading");
+const progress = document.getElementById("loading-progress");
+const percent = document.getElementById("loading-percent");
 
-  if(loading){
+let valor = 0;
 
-    setTimeout(() => {
+const intervalo = setInterval(() => {
 
-      loading.style.opacity = '0';
+    valor++;
 
-      setTimeout(() => {
+    progress.style.width = valor + "%";
 
-        loading.style.display = 'none';
+    percent.textContent = valor + "%";
 
-      }, 600);
+    if(valor >= 100){
 
-    }, 2000);
+        clearInterval(intervalo);
 
-  }
+    }
+
+},20);
+
+window.addEventListener("load",()=>{
+
+    setTimeout(()=>{
+
+        loading.style.opacity="0";
+
+        setTimeout(()=>{
+
+            loading.style.display="none";
+
+        },600);
+
+    },300);
 
 });
 
